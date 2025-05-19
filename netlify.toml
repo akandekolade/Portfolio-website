@@ -1,0 +1,15 @@
+[build]
+  base = "video-portfolio"
+  command = "CI=false npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
+  CI = "false"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true 
