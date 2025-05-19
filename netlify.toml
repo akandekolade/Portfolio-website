@@ -1,7 +1,7 @@
 [build]
   base = "video-portfolio"
   command = "CI=false npm run build"
-  publish = "build"
+  publish = "video-portfolio/build"
 
 [build.environment]
   NODE_VERSION = "18"
