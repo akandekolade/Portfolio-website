@@ -5,6 +5,8 @@ import ServicesSection from './components/ServicesSection';
 import BookingSection from './components/BookingSection';
 import GallerySection from './components/GallerySection';
 import './App.css';
+import { FaInstagram, FaVimeoV } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 function App() {
   const homeRef = useRef(null);
@@ -43,7 +45,14 @@ function App() {
       <div ref={bookingRef}>
         <BookingSection />
       </div>
-      <footer className="main-footer">© 2024 kilo.ink. All rights reserved.</footer>
+      <footer className="main-footer">
+        <div className="social-links">
+          <a href="https://www.instagram.com/kilo.ink.dump/" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a>
+          <a href="https://x.com/Kilokanmi00" target="_blank" rel="noopener noreferrer"><FaXTwitter size={30} /></a>
+          <a href="https://vimeo.com/user219944344" target="_blank" rel="noopener noreferrer"><FaVimeoV size={30} /></a>
+        </div>
+        © 2024 kilo.ink. All rights reserved.
+      </footer>
     </div>
   );
 }
